@@ -1,0 +1,12 @@
+.container {
+    width: 1024px;
+    margin: 40px auto;
+}
+#canvas {
+    display: block;
+    margin: 0 auto;
+    border: 2px solid black;
+    background: aliceblue;
+    width: 600px;
+    height: 600px;
+}
