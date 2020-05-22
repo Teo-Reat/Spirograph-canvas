@@ -16,6 +16,10 @@
     display: flex;
     justify-content: space-between;
 }
+.decart {
+    width: 600px;
+    margin: 10px auto;
+}
 h1 {
     font-size: xx-large;
 }
