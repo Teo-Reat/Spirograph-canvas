@@ -1,6 +1,7 @@
 let example = document.getElementById('canvas')
 let ctx = example.getContext('2d')
 let bigR = 12, smallR = 23, diameter = 43, color
+
 document.getElementById('big-r').oninput = function () {
 	if (Number.isInteger(+this.value)) {
 		bigR = this.value
