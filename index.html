@@ -7,19 +7,34 @@
 </head>
 <body>
 <section class="container">
-    <div>
-        <label>
-            <input type="number" id="big-r" placeholder="from 1 to 100">
-        </label>
-        <label>
-            <input type="number" id="small-r" placeholder="from 20 to 250">
-        </label>
-        <label>
-            <input type="number" id="diameter" placeholder="from 10 to 40">
-        </label>
-        <button id="start" onclick="spiro()">Start</button>
+    <h1>Spirograph</h1>
+    <div class="flex">
+        <div class="input-numbers">
+            <h2>Set numbers</h2>
+            <label>
+                <input type="text" id="big-r" placeholder="from 1 to 300">
+            </label>
+            <label>
+                <input type="text" id="small-r" placeholder="from 1 to 300">
+            </label>
+            <label>
+                <input type="text" id="diameter" placeholder="from 1 to 300">
+            </label>
+            <div class="color">
+                <h2>Set color</h2>
+                <label>
+                    <input type="color" id="color" placeholder="from 10 to 40">
+                </label>
+            </div>
+        </div>
+        <canvas id="canvas" width="600" height="600"></canvas>
+        <div class="input-buttons">
+            <h2>Controls</h2>
+            <button onclick="spiro()">Start</button>
+            <button onclick="pause()">Pause</button>
+            <button onclick="stop()">Clear</button>
+        </div>
     </div>
-    <canvas id="canvas" width="600" height="600"></canvas>
 </section>
 <script src="script.js"></script>
 </body>
